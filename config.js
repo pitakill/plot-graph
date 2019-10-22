@@ -5,12 +5,12 @@ const colorNodes = [
   // Gray pantone
   //'#fff',
   //'#eee',
-  //'#ddd',
-  //'#ccc',
-  //'#bbb',
-  //'#aaa',
-  //'#999',
-  //'#888',
+  '#ddd',
+  '#ccc',
+  '#bbb',
+  '#aaa',
+  '#999',
+  '#888',
   //'#777',
   //'#666',
   //'#555',
@@ -20,11 +20,15 @@ const colorNodes = [
   //'#111',
   //'#000',
   // Orange pantone
-  '#D78825',
-  '#D3832B',
-  '#C67D30',
-  '#B67233',
-  '#A7662B',
-  '#9E6A38',
-  '#835D32',
+  //'#D78825',
+  //'#D3832B',
+  //'#C67D30',
+  //'#B67233',
+  //'#A7662B',
+  //'#9E6A38',
+  //'#835D32',
 ];
+// Websocket URL
+const WSURL = 'ws://localhost:8080';
+const URLResources = `${WSURL}/resources`;
+const URLConnections = `${WSURL}/connections`;
