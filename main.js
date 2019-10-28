@@ -10,8 +10,8 @@ sigma.classes.graph.addMethod('edgeExists', function(edge) {
 sigma.classes.graph.addMethod('nodesExist', function(nodeA, nodeB) {
   return this.nodeExists(nodeA) && this.nodeExists(nodeB)
 });
-const connections = new sigma('connections');
-const resources = new sigma('resources');
+const connections = new sigma(sigmaSettings('connections'));
+const resources = new sigma(sigmaSettings('resources'));
 
 // Plot
 const plotResources = (data, element) => {
@@ -41,8 +41,10 @@ const plotResources = (data, element) => {
 
       element.graph.addEdge({
         id,
+        color: colorEdge,
         source: e.name,
         target: n.name,
+        type: edgeType,
       });
     });
   });
@@ -96,8 +98,10 @@ const plotConnections = (data, element) => {
 
     element.graph.addEdge({
       id,
+      color: colorEdge,
       source,
       target: destination,
+      type: edgeType,
     });
   });
 

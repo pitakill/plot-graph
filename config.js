@@ -28,7 +28,18 @@ const colorNodes = [
   //'#9E6A38',
   //'#835D32',
 ];
+const colorEdge = '#282c34';
 // Websocket URL
 const WSURL = 'ws://localhost:8080';
 const URLResources = `${WSURL}/resources`;
 const URLConnections = `${WSURL}/connections`;
+const sigmaSettings = element => ({
+  renderer: {
+    container: document.getElementById(element),
+    type: 'canvas',
+  },
+  settings: {
+    minArrowSize: 10,
+  },
+});
+const edgeType = 'curvedArrow';
